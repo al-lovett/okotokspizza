@@ -1,0 +1,115 @@
+body,html{
+    min-height: 100%;
+    min-width: 100%
+}
+
+body{
+    background-image: url(../images/backpizza2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+
+}
+h1{
+    font-weight: 900;
+    font-size:2em;
+    margin:0;
+    padding:0;
+    background-color: red;
+}
+
+p{
+    font-size:1.4em;
+    background-color: red;
+    margin: 0;
+    padding:0;
+    align:center;
+}
+
+nav{
+    width:55%;
+    height:100%;
+    background: rgba(255, 0, 0, 0.6);
+    margin-top: 00px;
+    padding-bottom: 45px;
+    float: right;
+}
+nav li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 80px;
+    padding-top:45px;
+}
+nav ul {
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+nav a{
+    color:white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 2em;
+}
+nav a:hover{
+    color:blue;
+}
+nav a::before{
+    content: :'';
+    display: block;
+    height: 100px;
+    width:100%;
+    background-color: black;
+}
+
+#sticky-div{
+    background-color: red;
+    width: 50%;
+    margin: 10px;
+    position: fixed;
+    bottom:0;
+    right:0;
+}
+
+
+table {
+    background: rgb(232, 0, 0, 0.7)
+
+
+}
+td {
+
+}
+table, th, td {
+    border: 1px solid white;
+    border-collapse: collapse;
+    font-size: 1.6em;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+table::after{
+        content: "";
+        display: block;
+        clear: both;
+    }
+.mobilesOlny{
+    visibility: hidden;
+}
+
+#movie{
+    float:left;
+}
+
+#map{
+    float:right;
+}
+
+#moviemap::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+    #movie{
+        display: none;
+}
